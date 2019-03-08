@@ -1,0 +1,6 @@
+I have used puppeteer to scrap the link and title dat from "https://time.com".
+
+on assignment/getTimeNews API endpoint I accessed the webpage and to extract current top 6 news, I used querySelectorAll to get the anchor tag which is enclosed inside multiple div's and class = "last-column" is unique to this column of top 6 news.
+Once i got the list of all 6 anchor tags i used the map() function to attain link (using getAttribute(href)) and title (using innertext and trim() to cut blank spaces) to get all 6 links and titles and stored the array as an object . And when the API was hit i passed this object as response . I used try and catch to report any error in loading the website.
+
+I have attached the package.json file also stating all the dependencies.
